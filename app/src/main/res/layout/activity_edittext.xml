@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="帳號:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text=""
+        android:hint="請輸入帳號"
+        android:textColor="#453F3F"
+        android:textColorHint="#FA0303"
+        android:textColorHighlight="#0303FA"
+        android:textScaleX="1.5"
+        android:typeface="sans"
+        android:inputType="numberDecimal"
+        />
+
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
