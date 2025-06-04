@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow>
+        <TextView
+            android:id="@+id/textView1_1"
+            android:text="遊戲名稱"
+            android:textSize="16sp"
+            android:textColor="#6071F8"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/textView1_2"
+            android:text="遊戲版本"
+            android:textSize="16sp"
+            android:textColor="#86DB62"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/textView1_3"
+            android:text="手機系統版本"
+            android:textSize="16sp"
+            android:textColor="#6071F8"
+            android:textStyle="bold"
+            />
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textView2_1"
+            android:text="超級瑪利歐大賽車"
+            android:layout_marginTop="5dp"
+
+            />
+        <TextView
+            android:id="@+id/textView2_2"
+            android:text="Version 1.6"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/textView2_3"
+            android:text="Android 8.1版"
+            android:layout_marginTop="5dp"
+            />
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textView3_1"
+            android:text="跑跑卡丁車"
+            android:layout_marginTop="5dp"
+
+            />
+        <TextView
+            android:id="@+id/textView3_2"
+            android:text="Version 2.65"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/textView3_3"
+            android:text="Android 12版"
+            android:layout_marginTop="5dp"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/textView4_1"
+            android:text="英雄聯盟"
+            android:layout_marginTop="5dp"
+
+            />
+        <TextView
+            android:id="@+id/textView4_2"
+            android:text="Version 12.3"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/textView4_3"
+            android:text="Android 13版"
+            android:layout_marginTop="5dp"
+            />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/button1"
+        android:text="選取遊戲"
+        />
+    <Button
+        android:id="@+id/button2"
+        android:text="離開選單"
+        />
+    <TableRow>
+        <Button
+            android:id="@+id/button7_1"
+            android:text="加入選單"
+
+            />
+        <Button
+            android:id="@+id/button7_2"
+            android:text="編輯選單"
+
+            />
+        <Button
+            android:id="@+id/button7_3"
+            android:text="清除選單"
+
+            />
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:id="@+id/imageView8_1"
+            android:src="@android:drawable/btn_star_big_on"
+            />
+        <ImageView
+            android:id="@+id/imageView8_2"
+            android:src="@android:drawable/btn_star_big_off"
+            />
+        <ImageView
+            android:id="@+id/imageView8_3"
+            android:src="@android:drawable/btn_dialog"
+            />
+    </TableRow>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:src="@drawable/check02_16"
+        android:scaleType="fitXY"
+        android:layout_height="30dp"
+        />
+
+    </TableRow>
+
+</TableLayout>

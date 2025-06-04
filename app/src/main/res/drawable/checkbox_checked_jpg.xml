@@ -4,7 +4,6 @@
     android:drawable=" @drawable/check02_16"
 
     />
-    <item android:drawable=" @drawable/uncheck02_16"
-        />
+
 
 </selector>
