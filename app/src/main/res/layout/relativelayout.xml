@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 標題 -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高屏澎東分署登入畫面"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- ImageView -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/picture" />
+
+    <!-- 帳號區塊 -->
+    <TextView
+        android:id="@+id/tvAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="帳號："
+        android:textSize="18sp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/etAccount"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvAccount"
+        android:layout_alignBaseline="@id/tvAccount"
+        android:textSize="18sp"
+        android:hint="請輸入帳號" />
+
+    <!-- 密碼區塊 -->
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密碼："
+        android:textSize="18sp"
+        android:layout_below="@id/etAccount"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvPassword"
+        android:layout_alignBaseline="@id/tvPassword"
+        android:textSize="18sp"
+        android:hint="請輸入密碼"
+        android:inputType="textPassword" />
+
+    <!-- RadioGroup 性別 -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+
+
+    <!-- 登入按鈕 -->
+
+    <!-- 註冊按鈕 -->
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="學生"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="教師"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="職員"
+        android:textSize="18sp" />
+</RadioGroup>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="420dp"
+        android:text="登入"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnLogin"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toEndOf="@id/btnLogin"
+        android:text="註冊"
+        android:textSize="18sp" />
+
+</RelativeLayout>

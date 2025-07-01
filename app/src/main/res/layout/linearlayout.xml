@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 功能標題 TextView：置中、字型24sp -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="高屏澎東分署登入畫面"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <!-- ImageView：寬240dp、高160dp、fitXY、置中 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/pictur" />
+
+    <!-- 帳號欄位 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帳號："
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="請輸入帳號"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- 密碼欄位 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密碼："
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="請輸入密碼"
+            android:inputType="textPassword"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- RadioButton 群組：置中 -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="學生"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教師"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="職員"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+
+
+    <!-- 登入與註冊按鈕 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="65dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登入"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="註冊"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

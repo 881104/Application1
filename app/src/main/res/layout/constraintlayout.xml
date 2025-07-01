@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 水平 Guideline：距頂端 390dp -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="390dp" />
+
+    <!-- 垂直 Guideline：距左側 65dp -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="65dp" />
+
+    <!-- 標題 -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高屏澎東分署登入畫面"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- ImageView -->
+
+    <!-- 帳號 -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="帳號："
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="請輸入帳號"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvUsername"
+            app:layout_constraintLeft_toRightOf="@id/tvUsername"/>
+
+
+    <!-- 密碼 -->
+
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="密碼："
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvUsername"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="請輸入密碼"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvPassword"
+            app:layout_constraintLeft_toRightOf="@id/tvPassword"/>
+
+
+
+
+    <!-- 登入按鈕 -->
+
+    <!-- 註冊按鈕，與登入水平對齊 -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="登入"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="註冊"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/btnLogin"
+        app:layout_constraintStart_toEndOf="@id/btnLogin"
+        android:layout_marginStart="20dp" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="學生"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教師"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="職員"
+            android:textSize="18sp" />
+</RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
